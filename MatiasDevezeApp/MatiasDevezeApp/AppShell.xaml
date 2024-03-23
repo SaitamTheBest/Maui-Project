@@ -6,9 +6,19 @@
     xmlns:local="clr-namespace:MatiasDevezeApp"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
 
+    <TabBar Shell.TabBarBackgroundColor="#0c420b" Shell.TabBarUnselectedColor="#734b07">
+        <ShellContent Title="Titre 1"
+                      Icon="petit_biscuit.png"
+                      ContentTemplate="{DataTemplate local:MainPage}"/>
+        <ShellContent Title="Titre 2"
+                      Icon="l_ane.png"
+                      ContentTemplate="{DataTemplate local:MainPage}"/>
+        <ShellContent Title="Titre 3"
+                      Icon="chat_potte.png"
+                      ContentTemplate="{DataTemplate local:MainPage}"/>
+        <ShellContent Title="Titre 4"
+                      Icon="shrek_image.png"
+                      ContentTemplate="{DataTemplate local:MainPage}"/>
+    </TabBar>
 </Shell>

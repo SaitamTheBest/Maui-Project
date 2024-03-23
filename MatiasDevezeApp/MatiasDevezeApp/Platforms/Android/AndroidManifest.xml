@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.matiasdeveze.shrekapp">
-	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:supportsRtl="true" android:label="ShrekApp"></application>
+	<application android:allowBackup="true" android:supportsRtl="true" android:label="ShrekApp" android:icon="@mipmap/shrek_icon"></application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
-	<uses-sdk />
+	<uses-sdk android:minSdkVersion="19" />
 </manifest>
