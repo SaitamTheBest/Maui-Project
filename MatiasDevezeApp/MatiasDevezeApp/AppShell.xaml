@@ -7,7 +7,7 @@
     Shell.FlyoutBehavior="Disabled">
 
 
-    <TabBar Shell.TabBarBackgroundColor="#0c420b" Shell.TabBarUnselectedColor="#734b07">
+    <TabBar Shell.TabBarBackgroundColor="#2bff00" Shell.TabBarUnselectedColor="Black">
         <ShellContent Title="Titre 1"
                       Icon="petit_biscuit.png"
                       ContentTemplate="{DataTemplate local:MainPage}"/>

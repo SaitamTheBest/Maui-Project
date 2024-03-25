@@ -43,7 +43,8 @@
                 Text="Bouton de Shrek"
                 BackgroundColor="#0c420b"
                 Clicked="OnShrekButtonClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" 
+                TextColor="White"/>
 
         </VerticalStackLayout>
     </ScrollView>
