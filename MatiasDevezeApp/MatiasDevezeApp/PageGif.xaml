@@ -10,13 +10,15 @@
 
         <Label 
             Text="Surprise !"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+        
         <Image 
+            x:Name="ShrekGif"
             Source="shrek_run.gif"
-            HeightRequest="200" 
-            HorizontalOptions="Center" 
-            IsAnimationPlaying="True" />
+            HeightRequest="200"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
 
     </VerticalStackLayout>
 </ContentPage>

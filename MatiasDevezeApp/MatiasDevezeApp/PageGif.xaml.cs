@@ -6,5 +6,12 @@ namespace MatiasDevezeApp
 		{
 			InitializeComponent();
 		}
-	}
+
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
+            await Task.Delay(100);
+            ShrekGif.IsAnimationPlaying = true;
+        }
+    }
 }
