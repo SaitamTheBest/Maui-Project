@@ -50,10 +50,25 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\shrek_icon.svg" />
+	  <None Remove="Resources\Images\shrek_image1.jpg" />
+	  <None Remove="Resources\Images\shrek_image2.jpg" />
+	  <None Remove="Resources\Images\shrek_run.gif" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="PageGif.xaml.cs">
+	    <DependentUpon>PageGif.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="PageGif.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

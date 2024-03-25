@@ -9,30 +9,40 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
             <Label
-                Text="Hello, World!"
+                Text="Shrek App"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="Bienvenue sur l'application  pour vénérer notre roi Shrek !"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
+                FontSize="16"
                 HorizontalOptions="Center" />
 
+            <HorizontalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                HorizontalOptions="Center">
+                
+                <Image
+                    Source="shrek_image1.png"
+                    HeightRequest="100"
+                 />
+
+                <Image
+                    Source="shrek_image2.png"
+                    HeightRequest="100"
+                />
+
+
+            </HorizontalStackLayout>
+
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+                Text="Bouton de Shrek"
+                BackgroundColor="#0c420b"
+                Clicked="OnShrekButtonClicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
