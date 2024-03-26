@@ -25,7 +25,7 @@
                 Spacing="25"
                 Padding="30,0"
                 HorizontalOptions="Center">
-                
+
                 <Image
                     Source="shrek_image1.png"
                     HeightRequest="100"
@@ -46,6 +46,23 @@
                 HorizontalOptions="Center" 
                 TextColor="White"/>
 
+            <CarouselView IndicatorView="indicatorView">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Shrek deviendra le roi des pirates</x:String>
+                        <x:String>Shrek a gagné TheVoice Kids</x:String>
+                        <x:String>Shrek est élu Miss Univers 2024</x:String>
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout BackgroundColor="ForestGreen" Padding="10">
+                            <Label FontSize="Medium" TextColor="White" Text="{Binding .}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView x:Name="indicatorView" Margin="5" HorizontalOptions="Center" VerticalOptions="Center"/>
         </VerticalStackLayout>
     </ScrollView>
 
