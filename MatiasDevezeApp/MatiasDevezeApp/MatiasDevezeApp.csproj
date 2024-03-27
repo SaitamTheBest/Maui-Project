@@ -67,13 +67,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="PageJokes.xaml.cs">
+	    <DependentUpon>PageJokes.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="PageGif.xaml.cs">
 	    <DependentUpon>PageGif.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="NewPage1.xaml">
+	  <MauiXaml Update="PageJokes.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PageGif.xaml">

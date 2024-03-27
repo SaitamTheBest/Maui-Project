@@ -14,7 +14,7 @@ namespace MatiasDevezeApp
         {
             try
             {
-                using HttpResponseMessage response = await _httpClient.GetAsync("http://www.contoso.com/");
+                using HttpResponseMessage response = await _httpClient.GetAsync("https://api.sampleapis.com/beers/ale");
                 response.EnsureSuccessStatusCode();
                 string responseBody = await response.Content.ReadAsStringAsync();
                 JsonDocument json = JsonDocument.Parse(responseBody);
@@ -27,7 +27,7 @@ namespace MatiasDevezeApp
             }
         }
 
-        public async Task<string> getSetup(int id)
+        public async Task<string> getName(int id)
         {
             try
             {
@@ -39,19 +39,19 @@ namespace MatiasDevezeApp
                 {
                     if (element.GetProperty("id").GetInt32() == id)
                     {
-                        string setup = element.GetProperty("setup").GetString();
-                        return setup;
+                        string name = element.GetProperty("name").GetString();
+                        return name;
                     }
                 }
                 return "Error 404 : not found";
             }
             catch (Exception e)
             {
-                return "Erreur lors de la récupération du setup : " + e.Message;
+                return "Erreur lors de la récupération du name : " + e.Message;
             }
         }
 
-        public async Task<string> getPunchline(int id)
+        public async Task<string> getImage(int id)
         {
             try
             {
@@ -63,15 +63,15 @@ namespace MatiasDevezeApp
                 {
                     if (element.GetProperty("id").GetInt32() == id)
                     {
-                        string punchline = element.GetProperty("punchline").GetString();
-                        return punchline;
+                        string image = element.GetProperty("image").GetString();
+                        return image;
                     }
                 }
                 return "Error 404 : not found";
             }
             catch (Exception e)
             {
-                return "Erreur lors de la récupération du setup : " + e.Message;
+                return "Erreur lors de la récupération du image : " + e.Message;
             }
         }
     }

@@ -8,12 +8,12 @@
 
 
     <TabBar Shell.TabBarBackgroundColor="#0c420b" Shell.TabBarUnselectedColor="Black">
-        <ShellContent Title="Acceuil"
+        <ShellContent Title="Accueil"
                       Icon="petit_biscuit.png"
                       ContentTemplate="{DataTemplate local:MainPage}"/>
         <ShellContent Title="Blagues"
                       Icon="l_ane.png"
-                      ContentTemplate="{DataTemplate local:MainPage}"/>
+                      ContentTemplate="{DataTemplate local:PageJokes}"/>
         <ShellContent Title="Titre 3"
                       Icon="chat_potte.png"
                       ContentTemplate="{DataTemplate local:MainPage}"/>
