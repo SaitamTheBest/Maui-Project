@@ -3,16 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MatiasDevezeApp.AddBeerPage"
              Title="Ajouter une bière">
-    
-    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="20">
-            <Image Source="shrek_image.png" HeightRequest="200"/>
-            <Label Text="On a oublié une bière biloute?"/>
-            <Label Text="RAJOUTE LA, VITE !" TextColor="GreenYellow" FontSize="Title"/>
+
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="20" Padding="20">
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
+            <Image Source="shrek_image.png" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="On a oublié une bière, biloute?" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="RAJOUTE-LA, VITE !" TextColor="GreenYellow" FontSize="Title" HorizontalOptions="Center"/>
         </VerticalStackLayout>
         <Entry Placeholder="Titre" x:Name="titleEntry" />
         <Entry Placeholder="Prix" x:Name="priceEntry" Keyboard="Numeric"/>
         <Entry Placeholder="URL de l'image" x:Name="imageUrlEntry" />
-        <Button Text="Ajouter" Clicked="Button_Clicked"/>
+        <Button Text="Ajouter" Clicked="Button_Clicked" HorizontalOptions="Center"/>
     </VerticalStackLayout>
 </ContentPage>
