@@ -1,9 +1,25 @@
-namespace MatiasDevezeApp;
-
-public partial class AddBeerPage : ContentPage
+namespace MatiasDevezeApp
 {
-	public AddBeerPage()
-	{
-		InitializeComponent();
-	}
+    public partial class AddBeerPage : ContentPage
+    {
+        private PageBeers _pageBeers;
+
+        public AddBeerPage()
+        {
+            InitializeComponent();
+            _pageBeers = new PageBeers();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            var newBeer = new Beer
+            {
+                Name = titleEntry.Text,
+                Image = imageUrlEntry.Text,
+                Price = "$ " + priceEntry.Text // Vous pouvez ajouter une entrée pour le prix si nécessaire
+            };
+
+            _pageBeers.AddItem(newBeer);
+        }
+    }
 }

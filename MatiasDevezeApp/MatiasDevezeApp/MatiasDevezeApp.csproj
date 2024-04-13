@@ -90,4 +90,6 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadUnhandledDeviceExceptionMatiasDevezeAppHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+
 </Project>

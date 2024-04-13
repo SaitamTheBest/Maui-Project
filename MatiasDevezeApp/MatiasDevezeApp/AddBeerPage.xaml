@@ -3,10 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MatiasDevezeApp.AddBeerPage"
              Title="Ajouter une bière">
+    
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Entry Placeholder="Titre" x:Name="titleEntry" />
-        <Entry Placeholder="Description" x:Name="descriptionEntry" />
+        <Entry Placeholder="Prix" x:Name="priceEntry" Keyboard="Numeric"/>
         <Entry Placeholder="URL de l'image" x:Name="imageUrlEntry" />
-        <Button Text="Ajouter"/>
+        <Button Text="Ajouter" Clicked="Button_Clicked"/>
     </StackLayout>
 </ContentPage>
