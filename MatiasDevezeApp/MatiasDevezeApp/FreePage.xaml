@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MatiasDevezeApp.FreePage"
+             Title="Service Shrek">
+
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <HorizontalStackLayout Grid.Row="0" HorizontalOptions="Center">
+            <Image Source="chat_potte.jpg" HeightRequest="100"/>
+            <VerticalStackLayout VerticalOptions="Center" Margin="10,0,50,0">
+                <Label Text="Quel boisson vous ferait plaisir" />
+                <Label Text="Señor/Señorita?" />
+                <Entry Placeholder="Recherche..." x:Name="SearchBeer" />
+                <HorizontalStackLayout VerticalOptions="Center">
+                    <Button Text="Au hasard !" Clicked="RandomButtonClicked"/>
+                    <Button Text="Ceci !" Clicked="SearchButtonClicked" Margin="10,0,0,0"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+        <ScrollView Grid.Row="1">
+            <StackLayout>
+                <Label x:Name="ElementCount" Text="Nombre d'éléments : 0" Margin="10"/>
+                <Label x:Name="ElementCountSearch" Text="Nombre d'éléments : 0" Margin="10"/>
+                <ListView x:Name="listView" ItemsSource="{Binding Items}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding Image}" HeightRequest="50" WidthRequest="50"/>
+                                    <Label Text="{Binding Name}" VerticalOptions="Center" Margin="10,0,0,0" />
+                                    <Label Text=" | " VerticalOptions="Center" Margin="10,0,0,0" />
+                                    <Label Text="{Binding Price}" VerticalOptions="Center" Margin="10,0,0,0" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

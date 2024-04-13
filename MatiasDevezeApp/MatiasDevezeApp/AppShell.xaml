@@ -17,8 +17,8 @@
         <ShellContent Title="Ajouter une bière"
                       Icon="chat_potte.png"
                       ContentTemplate="{DataTemplate local:AddBeerPage}"/>
-        <ShellContent Title="Titre 4"
+        <ShellContent Title="Service Shrek"
                       Icon="shrek_image.png"
-                      ContentTemplate="{DataTemplate local:MainPage}"/>
+                      ContentTemplate="{DataTemplate local:FreePage}"/>
     </TabBar>
 </Shell>

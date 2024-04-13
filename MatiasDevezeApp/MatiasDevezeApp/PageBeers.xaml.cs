@@ -7,7 +7,7 @@ namespace MatiasDevezeApp
         private ApiService _apiService;
 
         private static List<Beer> _personalBeer = new List<Beer>();
-        public ObservableCollection<Beer> Items { get; set; }
+        public static ObservableCollection<Beer> Items { get; set; }
 
         private bool _isApiDataLoaded = false;
 
@@ -17,6 +17,11 @@ namespace MatiasDevezeApp
             _apiService = new ApiService();
             Items = new ObservableCollection<Beer>();
             listView.ItemsSource = Items;
+        }
+
+        public ObservableCollection<Beer> GetBeers()
+        {
+            return Items;
         }
 
         public void AddItem(Beer beer)
