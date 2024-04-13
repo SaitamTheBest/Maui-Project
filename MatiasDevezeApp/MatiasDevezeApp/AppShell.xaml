@@ -14,9 +14,9 @@
         <ShellContent Title="Bières"
                       Icon="l_ane.png"
                       ContentTemplate="{DataTemplate local:PageBeers}"/>
-        <ShellContent Title="Titre 3"
+        <ShellContent Title="Ajouter une bière"
                       Icon="chat_potte.png"
-                      ContentTemplate="{DataTemplate local:MainPage}"/>
+                      ContentTemplate="{DataTemplate local:AddBeerPage}"/>
         <ShellContent Title="Titre 4"
                       Icon="shrek_image.png"
                       ContentTemplate="{DataTemplate local:MainPage}"/>

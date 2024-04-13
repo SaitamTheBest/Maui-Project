@@ -67,6 +67,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="AddBeerPage.xaml.cs">
+	    <DependentUpon>AddBeerPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="PageBeers.xaml.cs">
 	    <DependentUpon>PageBeers.xaml</DependentUpon>
 	  </Compile>
@@ -76,6 +79,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="AddBeerPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="PageBeers.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
