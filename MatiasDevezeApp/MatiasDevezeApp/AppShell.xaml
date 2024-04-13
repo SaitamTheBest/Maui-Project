@@ -11,9 +11,9 @@
         <ShellContent Title="Accueil"
                       Icon="petit_biscuit.png"
                       ContentTemplate="{DataTemplate local:MainPage}"/>
-        <ShellContent Title="Blagues"
+        <ShellContent Title="Bières"
                       Icon="l_ane.png"
-                      ContentTemplate="{DataTemplate local:PageJokes}"/>
+                      ContentTemplate="{DataTemplate local:PageBeers}"/>
         <ShellContent Title="Titre 3"
                       Icon="chat_potte.png"
                       ContentTemplate="{DataTemplate local:MainPage}"/>
