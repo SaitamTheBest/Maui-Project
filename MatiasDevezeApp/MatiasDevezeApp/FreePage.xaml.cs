@@ -28,10 +28,9 @@ public partial class FreePage : ContentPage
         Items.Clear();
         var beers = pageBeers.GetBeers();
 
-        ElementCountSearch.Text = "1 bières trouvées";
-
         if (beers.Count != 0)
         {
+            ElementCountSearch.Text = "1 bières trouvées";
             Random random = new Random();
             var index = random.Next(0, beers.Count);
             Items.Add(new Beer
@@ -40,6 +39,10 @@ public partial class FreePage : ContentPage
                 Image = beers[index].Image,
                 Price = beers[index].Price,
             });
+        }
+        else
+        {
+            ElementCountSearch.Text = "0 bières trouvées";
         }
     }
 

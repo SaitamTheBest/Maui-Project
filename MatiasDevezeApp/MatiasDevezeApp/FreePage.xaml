@@ -24,7 +24,7 @@
         <ScrollView Grid.Row="1">
             <StackLayout>
                 <Label x:Name="ElementCount" Text="Nombre d'éléments : 0" Margin="10"/>
-                <Label x:Name="ElementCountSearch" Text="Nombre d'éléments : 0" Margin="10"/>
+                <Label x:Name="ElementCountSearch" Margin="10"/>
                 <ListView x:Name="listView" ItemsSource="{Binding Items}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
