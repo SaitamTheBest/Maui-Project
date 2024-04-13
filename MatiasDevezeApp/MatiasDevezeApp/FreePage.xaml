@@ -7,12 +7,12 @@
     <Grid Padding="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <HorizontalStackLayout Grid.Row="0" HorizontalOptions="Center">
             <Image Source="chat_potte.jpg" HeightRequest="100"/>
             <VerticalStackLayout VerticalOptions="Center" Margin="10,0,50,0">
-                <Label Text="Quel boisson vous ferait plaisir" />
+                <Label Text="Quelle boisson vous ferez plaisir" />
                 <Label Text="Señor/Señorita?" />
                 <Entry Placeholder="Recherche..." x:Name="SearchBeer" />
                 <HorizontalStackLayout VerticalOptions="Center">

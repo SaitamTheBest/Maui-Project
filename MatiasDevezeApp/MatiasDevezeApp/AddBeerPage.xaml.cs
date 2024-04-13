@@ -16,7 +16,7 @@ namespace MatiasDevezeApp
             {
                 Name = titleEntry.Text,
                 Image = imageUrlEntry.Text,
-                Price = "$ " + priceEntry.Text // Vous pouvez ajouter une entrée pour le prix si nécessaire
+                Price = "$ " + priceEntry.Text
             };
 
             _pageBeers.AddItem(newBeer);

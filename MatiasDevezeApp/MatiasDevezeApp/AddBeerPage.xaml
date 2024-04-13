@@ -4,10 +4,15 @@
              x:Class="MatiasDevezeApp.AddBeerPage"
              Title="Ajouter une bière">
     
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="20">
+            <Image Source="shrek_image.png" HeightRequest="200"/>
+            <Label Text="On a oublié une bière biloute?"/>
+            <Label Text="RAJOUTE LA, VITE !" TextColor="GreenYellow" FontSize="Title"/>
+        </VerticalStackLayout>
         <Entry Placeholder="Titre" x:Name="titleEntry" />
         <Entry Placeholder="Prix" x:Name="priceEntry" Keyboard="Numeric"/>
         <Entry Placeholder="URL de l'image" x:Name="imageUrlEntry" />
         <Button Text="Ajouter" Clicked="Button_Clicked"/>
-    </StackLayout>
+    </VerticalStackLayout>
 </ContentPage>
