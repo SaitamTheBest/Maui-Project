@@ -7,7 +7,10 @@ namespace MatiasDevezeApp
         private ApiService _apiService;
 
         private static List<Beer> _personalBeer = new List<Beer>();
-        public static ObservableCollection<Beer> Items { get; set; }
+
+        public static List<Beer> exportData = new List<Beer>();
+
+        public ObservableCollection<Beer> Items { get; set; }
 
         private bool _isApiDataLoaded = false;
 
@@ -17,11 +20,6 @@ namespace MatiasDevezeApp
             _apiService = new ApiService();
             Items = new ObservableCollection<Beer>();
             listView.ItemsSource = Items;
-        }
-
-        public ObservableCollection<Beer> GetBeers()
-        {
-            return Items;
         }
 
         public void AddItem(Beer beer)
@@ -52,9 +50,15 @@ namespace MatiasDevezeApp
                     Image = beer.Image,
                     Price = beer.Price
                 });
+                exportData.Add(beer);
             }
         }
-        public void LoadPersonalData() 
+        public List<Beer> GetBeers() 
+        {
+            return exportData; 
+        }
+
+        public void LoadPersonalData()
         {
             foreach (var beer in _personalBeer)
             {
@@ -64,6 +68,8 @@ namespace MatiasDevezeApp
                     Image = beer.Image,
                     Price = beer.Price
                 });
+
+                exportData.Add(beer);
             }
             _personalBeer.Clear();
         }

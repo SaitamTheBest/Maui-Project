@@ -9,8 +9,8 @@ public partial class FreePage : ContentPage
     private PageBeers pageBeers;
     public ObservableCollection<Beer> Items { get; set; }
     public FreePage()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         pageBeers = new PageBeers();
         Items = new ObservableCollection<Beer>();
         listView.ItemsSource = Items;
@@ -33,21 +33,12 @@ public partial class FreePage : ContentPage
         if (beers.Count != 0)
         {
             Random random = new Random();
-            var index = random.Next(0, beers.Count); 
+            var index = random.Next(0, beers.Count);
             Items.Add(new Beer
             {
                 Name = beers[index].Name,
                 Image = beers[index].Image,
                 Price = beers[index].Price,
-            });
-        }
-        else
-        {
-            Items.Add(new Beer
-            {
-                Name = "NOT FOUND",
-                Image = "",
-                Price = "NOT FOUND",
             });
         }
     }
